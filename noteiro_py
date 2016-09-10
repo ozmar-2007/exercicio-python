@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: iso-8859-15 -*-
+ '''noteiro q emite quantia em $ de acordo com o valor solicitado vsolic usando
+ as notas ndispxxx. somente caucula quantas notas de cada valor necessarioas para operacao.
+ sugere q senhas e  saldo ja validados.'''
+ 
+ 
