@@ -5,3 +5,23 @@
  sugere q senhas e  saldo ja validados.'''
  
  
+ndisp100 = 10
+ndisp050 = 10
+ndisp020 = 10
+ndisp010 = 10
+ndisp005 = 10
+ndisp002 = 10
+
+vsolic = raw_input("qual valor solicitado")
+
+if vsolic >= 100 and ndisp100 > 0 :
+    nalib100 = vsolic/100
+    if ndisp100 >= nalib100 :
+        vsolic = vsolic - (nalib100 * 100)
+        ndisp100 = ndisp100 - nalib100
+    else :
+        vsolic = vsolic - (ndisp100 * 100)
+        ndisp100 = 0
+        
+        
+print vsolic ,ndisp100
