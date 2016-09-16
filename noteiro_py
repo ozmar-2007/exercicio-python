@@ -1,8 +1,9 @@
 #!/usr/bin/env python
-# -*- coding: iso-8859-15 -*-
- '''noteiro q emite quantia em $ de acordo com o valor solicitado vsolic usando
- as notas ndispxxx. somente caucula quantas notas de cada valor necessarioas para operacao.
- sugere q senhas e  saldo ja validados.'''
+# -*- coding: utf-8 -*-
+
+#'''noteiro q emite quantia em $ de acordo com o valor solicitado vsolic usando
+# 	as notas ndispxxx. somente caucula quantas notas de cada valor necessarioas para operacao.
+#	sugere q senhas e  saldo ja validados.'''
  
  
 ndisp100 = 10
@@ -12,7 +13,7 @@ ndisp010 = 10
 ndisp005 = 10
 ndisp002 = 10
 
-vsolic = raw_input("qual valor solicitado")
+vsolic = int(raw_input("qual valor solicitado  \n \n"))
 
 if vsolic >= 100 and ndisp100 > 0 :
     nalib100 = vsolic/100
@@ -22,6 +23,6 @@ if vsolic >= 100 and ndisp100 > 0 :
     else :
         vsolic = vsolic - (ndisp100 * 100)
         ndisp100 = 0
-        
-        
-print vsolic ,ndisp100
+
+print ("notas disponiveis de 100"), ndisp100
+
