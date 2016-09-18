@@ -15,10 +15,6 @@ ndisp002 = 10
 
 vsolic = int(raw_input("qual valor solicitado  \n \n"))
 
-
-
-
-
 if vsolic >= 100 and ndisp100 > 0:
     nalib100 = vsolic / 100
     if ndisp100 >= nalib100:
@@ -27,7 +23,6 @@ if vsolic >= 100 and ndisp100 > 0:
     else:
         vsolic = vsolic - (ndisp100 * 100)
         ndisp100 = 0
-
 
 if vsolic >= 50 and ndisp050 > 0:
     nalib050 = vsolic / 50
@@ -38,8 +33,6 @@ if vsolic >= 50 and ndisp050 > 0:
         vsolic = vsolic - (ndisp050 * 50)
         ndisp100 = 0
 
-
-
 if vsolic >= 20 and ndisp020 > 0:
     nalib020 = vsolic / 20
     if ndisp020 >= nalib020:
@@ -48,9 +41,6 @@ if vsolic >= 20 and ndisp020 > 0:
     else:
         vsolic = vsolic - (ndisp020 * 20)
         ndisp020 = 0
-
-
-
 
 if vsolic >= 10 and ndisp010 > 0:
     nalib010 = vsolic / 10
@@ -61,7 +51,6 @@ if vsolic >= 10 and ndisp010 > 0:
         vsolic = vsolic - (ndisp010 * 10)
         ndisp010 = 0
 
-
 if vsolic >= 5 and ndisp005 > 0:
     nalib005 = vsolic / 5
     if ndisp005 >= nalib005:
@@ -70,7 +59,6 @@ if vsolic >= 5 and ndisp005 > 0:
     else:
         vsolic = vsolic - (ndisp005 * 5)
         ndisp005 = 0
-
 
 if vsolic >= 2 and ndisp002 > 0:
     nalib002 = vsolic / 2
@@ -81,7 +69,6 @@ if vsolic >= 2 and ndisp002 > 0:
         vsolic = vsolic - (ndisp002 * 2)
         ndisp002 = 0
 
-        
 print ("notas disponiveis de 100 = "), ndisp100
 print ("notas disponiveis de 050 = "), ndisp050
 print ("notas disponiveis de o20 = "), ndisp020
