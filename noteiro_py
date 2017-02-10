@@ -78,4 +78,6 @@ print ("notas disponiveis de 010 = ", ndisp010)
 print ("notas disponiveis de 005 = ", ndisp005)
 print ("notas disponiveis de 002 = ", ndisp002)
 
+fim =  = input("any key to close  \n")
+
 
