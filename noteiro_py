@@ -65,8 +65,8 @@ if vsolic >= 5 and ndisp005 > 0:
 if vsolic >= 2 and ndisp002 > 0:
     nalib002 = vsolic / 2
     if ndisp002 >= nalib002:
-        vsolic = vsolic - (nalib002 * 2)
-        ndisp002 = ndisp002 - nalib002
+        vsolic = vsolic - (nalib002 * 2)  #ainda ha inconsistncia na semantica. as  otas ficam negativas  
+        ndisp002 = ndisp002 - nalib002    #e a disposiçao delas para para o saque ainda nao esta satisfatoria.
     else:
         vsolic = vsolic - (ndisp002 * 2)
         ndisp002 = 0
